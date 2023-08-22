@@ -1,3 +1,3 @@
 export default function Prototype(){
-    return <p>Prototype</p>
+    return <p>Prototyp</p>
 }
