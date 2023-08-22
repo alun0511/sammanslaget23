@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "next": "^13.4.19",
-    "react-router-dom": "^6.15.0",
-    "styled-components": "^6.0.7"
-  }
-}
