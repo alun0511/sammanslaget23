@@ -3,12 +3,12 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function Game() {
     const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
-      loaderUrl: "build/Sammanslaget.loader.js",
-      dataUrl: "build/Sammanslaget.data",
-      frameworkUrl: "build/Sammanslaget.framework.js",
-      codeUrl: "build/Sammanslaget.wasm",
+      loaderUrl: "./assets/build/Sammanslaget.loader.js",
+      dataUrl: "./assets/build/Sammanslaget.data",
+      frameworkUrl: "./assets/build/Sammanslaget.framework.js",
+      codeUrl: "./assets/build/Sammanslaget.wasm",
     });
-
+   
     const loadingPercentage = Math.round(loadingProgression * 100);
 
   return (
