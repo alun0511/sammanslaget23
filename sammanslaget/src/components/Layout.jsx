@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 const LayoutStyle = styled.div`
   width: 100vw;
@@ -17,11 +18,12 @@ const LayoutStyle = styled.div`
   }
 `;
 
-const Layout = ({ children, slug, description, shareImage }) => {
+const Layout = ({ children, slug }) => {
   return (
     <LayoutStyle>
       <Navigation />
       <main id="main">{children}</main>
+      <Footer></Footer>
     </LayoutStyle>
   );
 };
