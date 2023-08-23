@@ -15,7 +15,7 @@ function Game() {
     <div className="container">
       {isLoaded === false && (
         <div className="loading-overlay">
-          <p>Loading... ({loadingPercentage}%)</p>
+          <p>Laddar provdel ... ({loadingPercentage}%)</p>
         </div>
       )}
       <Unity className="unity" unityProvider={unityProvider} 
