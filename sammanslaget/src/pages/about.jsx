@@ -1,17 +1,18 @@
+import Layout from "@/components/Layout";
 import styled from "styled-components";
 import Image from "next/image";
 import Img from "../assets/daim.png";
 
 const StyledWrapperAbout = styled.div`
   background-color: white;
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  //width: 100;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  margin: auto;
+  padding-left: 200px;
   flex-wrap: wrap;
   gap: 50px;
-  //margin: 100px;
 `;
 
 const StyledNameAbout = styled.div`
@@ -20,6 +21,12 @@ const StyledNameAbout = styled.div`
   height: 500px;
   display: flex;
   flex-direction: column;
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
 `;
 const StyledAbout = styled.div`
   background-color: #ffffff;
@@ -27,73 +34,111 @@ const StyledAbout = styled.div`
   height: 100px;
   display: flex;
   align-items: center;
+  padding-top: 0;
 `;
 
 const About = () => {
   return (
     <>
-      <h1>About</h1>
-      <StyledWrapperAbout>
-        <StyledNameAbout>
-          <h2>Elisabet</h2>
-          <p>UX-Designer </p>
-          <StyledAbout>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            {<Image src={Img} alt="animated person" height="200" width="200" />}
-          </StyledAbout>
-        </StyledNameAbout>
+      <Layout>
+        <h1>About</h1>
+        <StyledWrapperAbout>
+          <StyledNameAbout>
+            <h2>Elisabet</h2>
+            <p>UX-Designer </p>
+            <StyledAbout>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              {
+                <Image
+                  src={Img}
+                  alt="animated person"
+                  height="200"
+                  width="200"
+                />
+              }
+            </StyledAbout>
+          </StyledNameAbout>
 
-        <StyledNameAbout>
-          <h2>Nina</h2>
-          <p>UX-Designer </p>
-          <StyledAbout>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            {<Image src={Img} alt="animated person" height="200" width="200" />}
-          </StyledAbout>
-        </StyledNameAbout>
+          <StyledNameAbout>
+            <h2>Nina</h2>
+            <p>UX-Designer </p>
+            <StyledAbout>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              {
+                <Image
+                  src={Img}
+                  alt="animated person"
+                  height="200"
+                  width="200"
+                />
+              }
+            </StyledAbout>
+          </StyledNameAbout>
 
-        <StyledNameAbout>
-          <h2>Alfred</h2>
-          <p>Webutvecklare</p>
-          <StyledAbout>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            {<Image src={Img} alt="animated person" height="200" width="200" />}
-          </StyledAbout>
-        </StyledNameAbout>
+          <StyledNameAbout>
+            <h2>Alfred</h2>
+            <p>Webutvecklare</p>
+            <StyledAbout>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              {
+                <Image
+                  src={Img}
+                  alt="animated person"
+                  height="200"
+                  width="200"
+                />
+              }
+            </StyledAbout>
+          </StyledNameAbout>
 
-        <StyledNameAbout>
-          <h2>Vali</h2>
-          <p>Webbutvecklare</p>
-          <StyledAbout>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            {<Image src={Img} alt="animated person" height="200" width="200" />}
-          </StyledAbout>
-        </StyledNameAbout>
+          <StyledNameAbout>
+            <h2>Vali</h2>
+            <p>Webbutvecklare</p>
+            <StyledAbout>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              {
+                <Image
+                  src={Img}
+                  alt="animated person"
+                  height="200"
+                  width="200"
+                />
+              }
+            </StyledAbout>
+          </StyledNameAbout>
 
-        <StyledNameAbout>
-          <h2>Lucas</h2>
-          <p>Spelprogrammerare</p>
-          <StyledAbout>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            {<Image src={Img} alt="animated person" height="200" width="200" />}
-          </StyledAbout>
-        </StyledNameAbout>
-      </StyledWrapperAbout>
+          <StyledNameAbout>
+            <h2>Lucas</h2>
+            <p>Spelprogrammerare</p>
+            <StyledAbout>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              {
+                <Image
+                  src={Img}
+                  alt="animated person"
+                  height="200"
+                  width="200"
+                />
+              }
+            </StyledAbout>
+          </StyledNameAbout>
+        </StyledWrapperAbout>
+      </Layout>
     </>
   );
 };

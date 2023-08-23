@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Quantico";
+  src: url("/src/assets/fonts/Quantico-Regular.woff2") format("woff2"),
+    url("/src/assets/fonts/Quantico-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quantico";
+  margin: 0;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  text-decoration: underline, blue;
+}
