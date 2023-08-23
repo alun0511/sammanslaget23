@@ -8,7 +8,7 @@ function Game() {
       frameworkUrl: "build/Sammanslaget.framework.js",
       codeUrl: "build/Sammanslaget.wasm",
     });
-
+   
     const loadingPercentage = Math.round(loadingProgression * 100);
 
   return (
