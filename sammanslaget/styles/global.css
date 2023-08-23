@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Quantico";
-  src: url("/src/assets/fonts/Quantico-Regular.woff2") format("woff2"),
-    url("/src/assets/fonts/Quantico-Regular.woff") format("woff");
+  src: url("/assets/fonts/Quantico-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Quantico-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Quantico";
+  font-family: "Quantico", "Times New Roman", Times, serif;
   margin: 0;
 }
 a:hover {
