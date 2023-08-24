@@ -3,11 +3,9 @@ import styled from "styled-components";
 import Image from "next/image";
 import Img from "../assets/daim.png";
 
-
 const StyledWrapperAbout = styled.div`
   background-color: white;
   height: 100%;
-  //width: 100;
   display: flex;
   flex-direction: row;
   margin: auto;
