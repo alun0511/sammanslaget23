@@ -4,7 +4,6 @@ import Image from "next/image";
 import Img from "../assets/daim.png";
 
 const StyledWrapperAbout = styled.div`
-  background-color: white;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -15,7 +14,6 @@ const StyledWrapperAbout = styled.div`
 `;
 
 const StyledNameAbout = styled.div`
-  background-color: #ffffff;
   width: 500px;
   height: 500px;
   display: flex;
@@ -27,8 +25,13 @@ const StyledNameAbout = styled.div`
     margin-top: 0;
   }
 `;
+
+const StyledAboutUs = styled.div`
+  width: 500px;
+  height: 100px;
+`;
+
 const StyledAbout = styled.div`
-  background-color: #ffffff;
   width: 500px;
   height: 100px;
   display: flex;
@@ -36,11 +39,18 @@ const StyledAbout = styled.div`
   padding-top: 0;
 `;
 
+const StyledHeading = styled.h1`
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 200px 200px 100px 200px;
+`;
+
 const About = () => {
   return (
     <>
       <Layout>
-        <h1>About</h1>
+        <StyledHeading>Det här är vi! Grupp 1</StyledHeading>
         <StyledWrapperAbout>
           <StyledNameAbout>
             <h2>Elisabet</h2>
@@ -140,7 +150,6 @@ const About = () => {
       </Layout>
     </>
   );
-
 };
 
 export default About;
