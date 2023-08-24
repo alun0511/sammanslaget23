@@ -23,7 +23,8 @@ const StyledNavDiv = styled.div`
   gap: 20px;
 `;
 
-const Navigation = () => {
+const Navigation = () => {  
+
   return (
     <StyledNavigation>
       <StyledLink href="/">
