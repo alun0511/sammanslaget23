@@ -46,9 +46,6 @@ const StyledAbout = styled.div`
 `;
 
 const StyledHeading = styled.h1`
-  display: flex;
-  flex-direction: row;
-  margin: auto;
   padding: 100px 200px 100px 100px;
   font-size: 42px;
 `;
@@ -62,7 +59,7 @@ const About = () => {
     <>
       <Layout>
         <StyledHeading>
-          Det här är vi - <StyledSpanGreen>Silikonvalen</StyledSpanGreen>
+          Det här är vi -<StyledSpanGreen> Silikonvalen </StyledSpanGreen>
         </StyledHeading>
         <StyledWrapperAbout>
           <StyledNameAbout>
