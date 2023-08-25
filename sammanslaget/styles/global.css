@@ -9,12 +9,12 @@ body {
   color: #ffffff;
 }
 
-/* a:link {
+a:link {
   color: #ffffff;
 }
 a:hover {
   color: #47cda0;
 }
 a:active {
-  text-decoration: #47cda0;
-} */
+  text-decoration: underline;
+}

@@ -36,6 +36,9 @@ const StyledHeroText = styled.div`
   max-width: 450px;
   overflow-wrap: break-word;
   margin-bottom: 79px;
+  h2 {
+    font-size: 18px;
+  }
 `;
 
 const StyledHeading = styled.h1`
@@ -44,9 +47,11 @@ const StyledHeading = styled.h1`
 
 const StyledHeadingContainer = styled.h2`
   align-self: baseline;
+  font-size: 36px;
 `;
-const StyledSpanGreen = styled.span`
+const StyledSpanGreenHeading = styled.span`
   color: #1c9067;
+  display: block;
 `;
 const StyledSpanRed = styled.span`
   color: #f42820;
@@ -54,9 +59,12 @@ const StyledSpanRed = styled.span`
 const StyledSpanPurple = styled.span`
   color: #b074bd;
 `;
-
+const StyledSpanGreen = styled.span`
+  color: #1c9067;
+`;
 const StyledContainer = styled.div`
   padding-top: 200px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,11 +76,15 @@ const StyledContainer = styled.div`
 `;
 
 const StyledContainerContent = styled.div`
-  width: 381px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  //margin-top: 120px;
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
 `;
 
 const StyledContainerContentText = styled.div`
@@ -98,12 +110,15 @@ const StyledButton = styled.button`
   color: #ffffff;
   font-family: Arial;
   font-size: 20px;
+  font-weight: bold;
 
   a:link {
     color: #ffffff;
+    text-decoration: none;
   }
 
   a:active {
+    color: #ffffff;
     text-decoration: #47cda0;
   }
 `;
@@ -211,7 +226,8 @@ export default function Home() {
           }
           <StyledContainerContent>
             <StyledHeadingContainer>
-              Ingen intervju - <StyledSpanGreen>men personligt</StyledSpanGreen>
+              Ingen intervju -{" "}
+              <StyledSpanGreenHeading>men personligt</StyledSpanGreenHeading>
             </StyledHeadingContainer>
 
             <p>
