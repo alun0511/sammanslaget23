@@ -25,7 +25,6 @@ const Prototype = ( { pageProps } ) => {
         style={{ width: 800, height: 600 }} 
         devicePixelRatio={2}/>
       </div>
-      <Game></Game>
     </Layout>
     );
     {/* return (
