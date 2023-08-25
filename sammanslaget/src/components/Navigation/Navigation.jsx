@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import Link from "next/link";
+//import ImgVal from;
 
 const StyledNavigation = styled.nav`
   width: 100%;
@@ -23,16 +24,19 @@ const StyledNavDiv = styled.div`
   gap: 20px;
 `;
 
-const Navigation = () => {  
+const StyledHeader = styled.h1`
+  margin-left: 0;
+`;
 
+const Navigation = () => {
   return (
     <StyledNavigation>
       <StyledLink href="/">
-        <h1>Sammanslaget</h1>
+        <StyledHeader>Silikonvalen</StyledHeader>
       </StyledLink>
       <StyledNavDiv>
         <StyledLink href="/about">Om oss</StyledLink>
-        <StyledLink href="/prototype">Prototype</StyledLink>
+        <StyledLink href="/prototype">Prototyp</StyledLink>
       </StyledNavDiv>
     </StyledNavigation>
   );

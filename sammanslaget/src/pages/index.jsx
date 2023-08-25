@@ -28,20 +28,31 @@ const StyledHero = styled.div`
   justify-content: center;
   align-items: center;
   height: 500px;
-  margin-top: 0;
+  margin-top: 77px;
 `;
 
 const StyledHeroText = styled.div`
   text-align: center;
   max-width: 450px;
   overflow-wrap: break-word;
+  margin-bottom: 79px;
 `;
 
 const StyledHeading = styled.h1`
   margin-top: 80px;
 `;
-const StyledSpan = styled.span`
+
+const StyledHeadingContainer = styled.h2`
+  align-self: baseline;
+`;
+const StyledSpanGreen = styled.span`
   color: #1c9067;
+`;
+const StyledSpanRed = styled.span`
+  color: #f42820;
+`;
+const StyledSpanPurple = styled.span`
+  color: #b074bd;
 `;
 
 const StyledContainer = styled.div`
@@ -52,7 +63,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 10;
+  margin-top: 120;
   gap: 100px;
 `;
 
@@ -60,17 +71,42 @@ const StyledContainerContent = styled.div`
   width: 381px;
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
+  //margin-top: 120px;
 `;
 
 const StyledContainerContentText = styled.div`
   width: 300px;
   overflow-wrap: break-word;
-  text-align: center;
+  //text-align: center;
 `;
 
-//const Styled
+const StyledContainerContentTest = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const StyledButton = styled.button`
+  width: 295px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  background-color: #47cda0;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+
+  a:link {
+    color: #ffffff;
+  }
+
+  a:active {
+    text-decoration: #47cda0;
+  }
+`;
 
 export default function Home() {
   return (
@@ -78,7 +114,7 @@ export default function Home() {
       <StyledWrapper>
         <StyledHero>
           <StyledHeading>
-            Urvalsprov för <StyledSpan>Webbutveckling</StyledSpan>
+            Urvalsprov för <StyledSpanGreen> Webbutveckling</StyledSpanGreen>
           </StyledHeading>
           <StyledHeroText>
             <p>
@@ -100,13 +136,15 @@ export default function Home() {
           {
             <Image
               src={ImgShapes}
-              alt="animated person sitting infront of a computer"
+              alt="animated shapes such as triangle, circle etc. in different colors"
               height="auto"
               width="auto"
             />
           }
           <StyledContainerContent>
-            <h2>One size does not fit all</h2>
+            <StyledHeadingContainer>
+              One size does <StyledSpanRed> not </StyledSpanRed>fit all
+            </StyledHeadingContainer>
 
             <p>
               Vårt urvalsprov innehåller en variation av uppgifter för att ge
@@ -143,7 +181,8 @@ export default function Home() {
             }
             <StyledContainerContentText>
               <p>
-                Sort It testar logiskt tänkande genom kategorisering av objekt
+                <StyledSpanGreen>Sortera Mera</StyledSpanGreen> testar logiskt
+                tänkande genom kategorisering av objekt
               </p>
             </StyledContainerContentText>
           </StyledContainerContent>
@@ -171,7 +210,9 @@ export default function Home() {
             />
           }
           <StyledContainerContent>
-            <h2>Ingen intervju - men personligt</h2>
+            <StyledHeadingContainer>
+              Ingen intervju - <StyledSpanGreen>men personligt</StyledSpanGreen>
+            </StyledHeadingContainer>
 
             <p>
               Vårt nya koncept sänker personalkostnader genom att omvandla
@@ -187,13 +228,16 @@ export default function Home() {
           </StyledContainerContent>
 
           <StyledContainerContent>
-            <h2>Ingen AI tillåten</h2>
+            <StyledHeadingContainer>
+              Ingen <StyledSpanPurple> AI </StyledSpanPurple> tillåten
+            </StyledHeadingContainer>
 
             <p>
               För att AI-säkra urvalsprovet är tanken att provet ska göras på
               plats i skolan, där det finns en lärare som övervakar testet.
               Mobiltelefoner ska lämnas in innan provet börjar och datorerna
-              kommer att övervakas med hjälp av Safe-Exam.{" "}
+              kommer att övervakas med hjälp av
+              <StyledSpanGreen> Safe-Exam</StyledSpanGreen>.
             </p>
             <p>
               Safe-Exam är ett gratisverktyg som gör att det inte går att öppna
@@ -210,6 +254,13 @@ export default function Home() {
               width="auto"
             />
           }
+
+          <StyledContainerContentTest>
+            <h2>Redo att testa?</h2>
+            <StyledButton>
+              <Link href="/prototype">Gå till prototyp</Link>
+            </StyledButton>
+          </StyledContainerContentTest>
         </StyledContainer>
       </StyledWrapper>
     </Layout>

@@ -1,7 +1,11 @@
 import Layout from "@/components/Layout";
 import styled from "styled-components";
 import Image from "next/image";
-import Img from "../assets/daim.png";
+import ImgElisabet from "../assets/Elisabet.png";
+import ImgNina from "../assets/Nina.png";
+import ImgAlfred from "../assets/Alfred.png";
+import ImgVali from "../assets/Vali.png";
+import ImgLucas from "../assets/Lucas.png";
 
 const StyledWrapperAbout = styled.div`
   height: 100%;
@@ -10,14 +14,15 @@ const StyledWrapperAbout = styled.div`
   margin: auto;
   padding-left: 200px;
   flex-wrap: wrap;
-  gap: 50px;
+  //gap: 128px;
 `;
 
 const StyledNameAbout = styled.div`
   width: 500px;
-  height: 500px;
   display: flex;
+  margin-bottom: 180px;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
   h2 {
     margin-bottom: 0;
   }
@@ -37,6 +42,7 @@ const StyledAbout = styled.div`
   display: flex;
   align-items: center;
   padding-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
 const StyledHeading = styled.h1`
@@ -50,22 +56,23 @@ const About = () => {
   return (
     <>
       <Layout>
-        <StyledHeading>Det här är vi! Grupp 1</StyledHeading>
+        <StyledHeading>Det här är vi! Grupp Silikonvalen</StyledHeading>
         <StyledWrapperAbout>
           <StyledNameAbout>
             <h2>Elisabet</h2>
             <p>UX-Designer </p>
             <StyledAbout>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Har alltid gillat att skapa saker med händerna och nu också
+                digitalt. Älskar djur men är pälsallergiker. Göteborgsbo i 10
+                år, västerbottning i hjärtat.
               </p>
               {
                 <Image
-                  src={Img}
+                  src={ImgElisabet}
                   alt="animated person"
-                  height="200"
-                  width="200"
+                  height="auto"
+                  width="auto"
                 />
               }
             </StyledAbout>
@@ -76,15 +83,15 @@ const About = () => {
             <p>UX-Designer </p>
             <StyledAbout>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Gillar att utveckla nya idéer och skapa pixel art. Är på
+                fritiden en gamer, småbarnsmamma och lajvare. Sann Göteborgare.
               </p>
               {
                 <Image
-                  src={Img}
+                  src={ImgNina}
                   alt="animated person"
-                  height="200"
-                  width="200"
+                  height="auto"
+                  width="auto"
                 />
               }
             </StyledAbout>
@@ -100,10 +107,10 @@ const About = () => {
               </p>
               {
                 <Image
-                  src={Img}
+                  src={ImgAlfred}
                   alt="animated person"
-                  height="200"
-                  width="200"
+                  height="auto"
+                  width="auto"
                 />
               }
             </StyledAbout>
@@ -114,15 +121,16 @@ const About = () => {
             <p>Webbutvecklare</p>
             <StyledAbout>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Silcon Vali är mitt hackernamn. Älskar djur och ordvitsar. Badar
+                gärna året runt och snusar när jag inte bestämt mig för att
+                sluta för 1000 gången.
               </p>
               {
                 <Image
-                  src={Img}
+                  src={ImgVali}
                   alt="animated person"
-                  height="200"
-                  width="200"
+                  height="auto"
+                  width="auto"
                 />
               }
             </StyledAbout>
@@ -138,10 +146,10 @@ const About = () => {
               </p>
               {
                 <Image
-                  src={Img}
+                  src={ImgLucas}
                   alt="animated person"
-                  height="200"
-                  width="200"
+                  height="auto"
+                  width="auto"
                 />
               }
             </StyledAbout>
