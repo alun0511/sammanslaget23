@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import Meta from "./Meta";
 
 const LayoutStyle = styled.div`
   width: 100vw;
@@ -17,9 +18,15 @@ const LayoutStyle = styled.div`
   }
 `;
 
-const Layout = ({ children, slug }) => {
+const Layout = ({ children, slug, description, shareImage  }) => {
   return (
     <LayoutStyle>
+      <Meta
+              siteTitle={`Silikonvalen - ${slug}`}
+              title={`SilikonValen - ${slug}`}
+              image={shareImage}
+              description={description}
+      />
       <Navigation />
       <main id="main">{children}</main>
       <Footer />
