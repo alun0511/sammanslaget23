@@ -34,10 +34,10 @@ const StyledHeadingText = styled.div`
 const Prototype = ({ pageProps }) => {
   const { unityProvider, isLoaded, loadingProgression, unload } =
     useUnityContext({
-      loaderUrl: "/prototype/build/Sammanslaget.loader.js",
-      dataUrl: "/prototype/build/Sammanslaget.data",
-      frameworkUrl: "/prototype/build/Sammanslaget.framework.js",
-      codeUrl: "/prototype/build/Sammanslaget.wasm",
+      loaderUrl: "/Prototype/Build/Sammanslaget.loader.js",
+      dataUrl: "/Prototype/Build/Sammanslaget.data",
+      frameworkUrl: "/Prototype/Build/Sammanslaget.framework.js",
+      codeUrl: "/Prototype/Build/Sammanslaget.wasm",
     });
 
   const loadingPercentage = Math.round(loadingProgression * 100);
