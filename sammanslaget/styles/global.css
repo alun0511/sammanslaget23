@@ -6,10 +6,15 @@ body {
   font-family: "Quantico", "Times New Roman", Times, serif;
   margin: 0;
   background-color: #312b2b;
+  color: #ffffff;
+}
+
+/* a:link {
+  color: #ffffff;
 }
 a:hover {
-  color: red;
+  color: #47cda0;
 }
 a:active {
-  text-decoration: underline, blue;
-}
+  text-decoration: #47cda0;
+} */
