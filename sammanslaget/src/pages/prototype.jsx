@@ -1,9 +1,8 @@
 import Layout from "@/components/Layout";
-import Game from "@/components/Game";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useEffect } from "react";
 
-const Prototype = () => {
+const Prototype = ( { pageProps } ) => {
     const { unityProvider, isLoaded, loadingProgression, unload } = useUnityContext({
         loaderUrl: "/build/Sammanslaget.loader.js",
         dataUrl: "/build/Sammanslaget.data",
@@ -24,8 +23,7 @@ const Prototype = () => {
         )}
         <Unity className="unity" unityProvider={unityProvider} 
         style={{ width: 800, height: 600 }} 
-        devicePixelRatio={2}
-        />
+        devicePixelRatio={2}/>
       </div>
       <Game></Game>
     </Layout>
