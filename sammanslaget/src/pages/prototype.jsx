@@ -5,10 +5,10 @@ import { useEffect } from "react";
 
 const Prototype = () => {
     const { unityProvider, isLoaded, loadingProgression, unload } = useUnityContext({
-        loaderUrl: "./build/Sammanslaget.loader.js",
-        dataUrl: "./build/Sammanslaget.data",
-        frameworkUrl: "./build/Sammanslaget.framework.js",
-        codeUrl: "./build/Sammanslaget.wasm",
+        loaderUrl: "/build/Sammanslaget.loader.js",
+        dataUrl: "/build/Sammanslaget.data",
+        frameworkUrl: "/build/Sammanslaget.framework.js",
+        codeUrl: "/build/Sammanslaget.wasm",
       });
 
       const loadingPercentage = Math.round(loadingProgression * 100);
