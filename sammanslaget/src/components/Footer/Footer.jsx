@@ -1,21 +1,22 @@
 import { styled } from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
+import Img from "../../assets/yrgo.png";
 
 const StyledFooter = styled.div`
   width: 100%;
-  height: 64px;
+  height: 139px;
   background-color: #000;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  bottom: 0;
   margin-top: 200px;
   position: relative;
 `;
 
 const StyledLink = styled(Link)`
-  color: red;
   text-decoration: none;
   margin: 18px 40px 10px 40px;
 `;
@@ -24,7 +25,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <StyledLink href="/">
-        <h1>YRGO</h1>
+        {<Image src={Img} alt="Yrgo logo" height="150" width="200" />}
       </StyledLink>
     </StyledFooter>
   );

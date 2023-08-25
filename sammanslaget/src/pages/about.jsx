@@ -28,9 +28,6 @@ const StyledNameAbout = styled.div`
     margin-top: 0;
     font-size: 18px;
   }
-  p {
-    //margin-top: 0;
-  }
 `;
 
 const StyledAboutUs = styled.div`
@@ -45,6 +42,7 @@ const StyledAbout = styled.div`
   align-items: center;
   padding-top: 0;
   font-family: Arial, Helvetica, sans-serif;
+  gap: 79px;
 `;
 
 const StyledHeading = styled.h1`
@@ -55,11 +53,17 @@ const StyledHeading = styled.h1`
   font-size: 42px;
 `;
 
+const StyledSpanGreen = styled.span`
+  color: #1c9067;
+`;
+
 const About = () => {
   return (
     <>
       <Layout>
-        <StyledHeading>Det här är vi - Silikonvalen!</StyledHeading>
+        <StyledHeading>
+          Det här är vi - <StyledSpanGreen>Silikonvalen</StyledSpanGreen>
+        </StyledHeading>
         <StyledWrapperAbout>
           <StyledNameAbout>
             <h2>Elisabet</h2>
@@ -144,8 +148,9 @@ const About = () => {
             <h2>Spelprogrammerare</h2>
             <StyledAbout>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tycker att det är väldigt kul att lära mig nya saker. Är väldigt
+                musik intresserad. På fritiden gillar jag att Programmera och
+                spela spel.
               </p>
               {
                 <Image

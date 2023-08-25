@@ -71,7 +71,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 120;
+  margin-top: 120px;
   gap: 100px;
 `;
 
@@ -90,7 +90,6 @@ const StyledContainerContent = styled.div`
 const StyledContainerContentText = styled.div`
   width: 300px;
   overflow-wrap: break-word;
-  //text-align: center;
 `;
 
 const StyledContainerContentTest = styled.div`
@@ -117,9 +116,13 @@ const StyledButton = styled.button`
     text-decoration: none;
   }
 
-  a:active {
+  a:hover {
     color: #ffffff;
-    text-decoration: #47cda0;
+
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
   }
 `;
 
