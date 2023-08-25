@@ -122,6 +122,7 @@ const StyledButton = styled.button`
     text-decoration: none;
   }
   a:visited {
+    color: #ffffff;
     text-decoration: none;
   }
 `;
