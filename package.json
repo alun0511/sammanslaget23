@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@next/font": "^13.4.19",
     "styled-components": "^6.0.7"
   }
 }
