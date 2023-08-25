@@ -12,9 +12,9 @@ const StyledWrapperAbout = styled.div`
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding-left: 200px;
+  padding-left: 100px;
   flex-wrap: wrap;
-  //gap: 128px;
+  gap: 128px;
 `;
 
 const StyledNameAbout = styled.div`
@@ -25,9 +25,11 @@ const StyledNameAbout = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   h2 {
     margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
   }
   p {
-    margin-top: 0;
+    //margin-top: 0;
   }
 `;
 
@@ -49,18 +51,19 @@ const StyledHeading = styled.h1`
   display: flex;
   flex-direction: row;
   margin: auto;
-  padding: 200px 200px 100px 200px;
+  padding: 100px 200px 100px 100px;
+  font-size: 42px;
 `;
 
 const About = () => {
   return (
     <>
       <Layout>
-        <StyledHeading>Det här är vi! Grupp Silikonvalen</StyledHeading>
+        <StyledHeading>Det här är vi - Silikonvalen!</StyledHeading>
         <StyledWrapperAbout>
           <StyledNameAbout>
             <h2>Elisabet</h2>
-            <p>UX-Designer </p>
+            <h2>UX-Designer </h2>
             <StyledAbout>
               <p>
                 Har alltid gillat att skapa saker med händerna och nu också
@@ -80,7 +83,7 @@ const About = () => {
 
           <StyledNameAbout>
             <h2>Nina</h2>
-            <p>UX-Designer </p>
+            <h2>UX-Designer </h2>
             <StyledAbout>
               <p>
                 Gillar att utveckla nya idéer och skapa pixel art. Är på
@@ -99,7 +102,7 @@ const About = () => {
 
           <StyledNameAbout>
             <h2>Alfred</h2>
-            <p>Webutvecklare</p>
+            <h2>Webutvecklare</h2>
             <StyledAbout>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -118,7 +121,7 @@ const About = () => {
 
           <StyledNameAbout>
             <h2>Vali</h2>
-            <p>Webbutvecklare</p>
+            <h2>Webbutvecklare</h2>
             <StyledAbout>
               <p>
                 Silcon Vali är mitt hackernamn. Älskar djur och ordvitsar. Badar
@@ -138,7 +141,7 @@ const About = () => {
 
           <StyledNameAbout>
             <h2>Lucas</h2>
-            <p>Spelprogrammerare</p>
+            <h2>Spelprogrammerare</h2>
             <StyledAbout>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

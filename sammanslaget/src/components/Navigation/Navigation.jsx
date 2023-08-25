@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import Link from "next/link";
-//import ImgVal from;
+import Image from "next/image";
+import Img from "../../assets/valen.png";
 
 const StyledNavigation = styled.nav`
   width: 100%;
@@ -13,9 +14,13 @@ const StyledNavigation = styled.nav`
 `;
 
 const StyledLink = styled(Link)`
-  color: #1c9067;
+  color: #ffffff;
   text-decoration: none;
   margin: 18px 40px 10px 40px;
+
+  a:hover {
+    color: #47cda0;
+  }
 `;
 
 const StyledNavDiv = styled.div`
@@ -25,15 +30,25 @@ const StyledNavDiv = styled.div`
 `;
 
 const StyledHeader = styled.h1`
+  color: #47cda0;
   margin-left: 0;
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
 `;
 
 const Navigation = () => {
   return (
     <StyledNavigation>
-      <StyledLink href="/">
-        <StyledHeader>Silikonvalen</StyledHeader>
-      </StyledLink>
+      <StyledNavDiv>
+        <StyledLink href="/">
+          <StyledHeader>
+            Silikonvalen
+            {<Image src={Img} alt="whale" height="auto" width="auto" />}
+          </StyledHeader>
+        </StyledLink>
+      </StyledNavDiv>
       <StyledNavDiv>
         <StyledLink href="/about">Om oss</StyledLink>
         <StyledLink href="/prototype">Prototyp</StyledLink>
