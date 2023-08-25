@@ -1,8 +1,9 @@
 import Layout from "@/components/Layout";
 import { Unity, useUnityContext } from "react-unity-webgl";
-import { useEffect } from "react";
+
 
 const Prototype = ( { pageProps } ) => {
+
     const { unityProvider, isLoaded, loadingProgression, unload } = useUnityContext({
         loaderUrl: "/Prototype/Build/Sammanslaget.loader.js",
         dataUrl: "/Prototype/Build/Sammanslaget.data",
