@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import { useEffect } from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
 
 const StyledHeadingContainer = styled.div`
   width: 100%;
@@ -32,8 +33,8 @@ const StyledHeadingText = styled.div`
 `;
 
 const Prototype = ({ pageProps }) => {
-  const { unityProvider, isLoaded, loadingProgression, unload } =
-    useUnityContext({
+
+  const { unityProvider, isLoaded, loadingProgression, unload, unityContext } = useUnityContext({
       loaderUrl: "/Prototype/Build/Sammanslaget.loader.js",
       dataUrl: "/Prototype/Build/Sammanslaget.data",
       frameworkUrl: "/Prototype/Build/Sammanslaget.framework.js",
@@ -41,6 +42,23 @@ const Prototype = ({ pageProps }) => {
     });
 
   const loadingPercentage = Math.round(loadingProgression * 100);
+  
+  const router = useRouter();
+
+  useEffect(() => {
+    const exitingFunction = () => {
+      console.log("exiting...");
+    };
+
+    router.events.on("routeChangeStart", exitingFunction);
+
+    return () => {
+      
+      console.log("unmounting component...");
+      router.events.off("routeChangeStart", exitingFunction);
+    };
+  }, []);
+
 
   return (
     <Layout>
